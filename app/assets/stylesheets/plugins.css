@@ -1651,6 +1651,7 @@
 
 .service-box-content > *:last-child {
     margin-bottom: 0;
+    color: #fff;
 }
 
 .service-box-content > a {
@@ -1716,7 +1717,7 @@
 }
 
 .service-box.style-1 > a.waves .waves-ripple {
-    background-color: #b12c65;
+    background-color: #0e668a;
 }
 
 .service-box.style-1 .service-box-content h6 {
@@ -1766,11 +1767,11 @@
 }
 
 .service-box.style-1:hover p:last-of-type:hover {
-    color: #464646;
+    color: #fff;
 }
 
 .service-box.style-1:hover .service-box-content p:last-of-type:hover:after {
-    border-color: #464646;
+    border-color: #fff;
 }
 
 .service-box.style-1:hover:after {
