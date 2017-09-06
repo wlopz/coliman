@@ -1,0 +1,61 @@
+[a9665dae-83f6-408b-89f2-dec675a1183e] Started GET "/" for 127.0.0.1 at 2017-09-01 19:33:16 +0000
+[a9665dae-83f6-408b-89f2-dec675a1183e] Processing by SectionsController#home as HTML
+[a9665dae-83f6-408b-89f2-dec675a1183e]   Rendering sections/home.html.erb within layouts/application
+[a9665dae-83f6-408b-89f2-dec675a1183e]   Rendered sections/home.html.erb within layouts/application (23.5ms)
+[a9665dae-83f6-408b-89f2-dec675a1183e]   Rendered layouts/_navbar.html.erb (10.3ms)
+[a9665dae-83f6-408b-89f2-dec675a1183e]   Rendered layouts/_footer.html.erb (1.6ms)
+[a9665dae-83f6-408b-89f2-dec675a1183e] Completed 200 OK in 315ms (Views: 183.4ms)
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b] Started GET "/about" for 127.0.0.1 at 2017-09-01 19:34:49 +0000
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b] Processing by SectionsController#about as HTML
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b]   Parameters: {"authenticity_token"=>"QjZiCNWYUyoa9J/ZoLJaNtoV/C4m0FttTVTFwjiiLmiGg0PJH7ei3/ZoQNJerFD8urt/EiyoGLH41X2htdFYtw=="}
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b]   Rendering sections/about.html.erb within layouts/application
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b]   Rendered sections/about.html.erb within layouts/application (33.6ms)
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b]   Rendered layouts/_navbar.html.erb (43.0ms)
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b]   Rendered layouts/_footer.html.erb (0.1ms)
+[dbd4335c-5428-4e95-bd15-62c3cfcbd91b] Completed 200 OK in 166ms (Views: 134.1ms)
+[50c275a1-3037-4588-967b-14dd574c0ce5] Started GET "/services" for 127.0.0.1 at 2017-09-01 19:35:01 +0000
+[50c275a1-3037-4588-967b-14dd574c0ce5] Processing by SectionsController#services as HTML
+[50c275a1-3037-4588-967b-14dd574c0ce5]   Parameters: {"authenticity_token"=>"cp1OScmEdeXWBAZPrxus5w1r32Ic7T/oanO+Aibb7dG2KG+IA6uEEDqY2URRBaYtbcVcXhaVfDTf8gZhq6ibDg=="}
+[50c275a1-3037-4588-967b-14dd574c0ce5]   Rendering sections/services.html.erb within layouts/application
+[50c275a1-3037-4588-967b-14dd574c0ce5]   Rendered sections/services.html.erb within layouts/application (52.8ms)
+[50c275a1-3037-4588-967b-14dd574c0ce5]   Rendered layouts/_navbar.html.erb (23.6ms)
+[50c275a1-3037-4588-967b-14dd574c0ce5]   Rendered layouts/_footer.html.erb (1.8ms)
+[50c275a1-3037-4588-967b-14dd574c0ce5] Completed 200 OK in 709ms (Views: 441.5ms)
+[a96758b0-9417-410e-84bd-2426d770ffe7] Started GET "/portfolio" for 127.0.0.1 at 2017-09-01 19:35:11 +0000
+[a96758b0-9417-410e-84bd-2426d770ffe7] Processing by SectionsController#portfolio as HTML
+[a96758b0-9417-410e-84bd-2426d770ffe7]   Parameters: {"authenticity_token"=>"5zgsyMq10/Hegg7kO7qyAy2VHfUuhgOCkIBt1cbCDp0jjQ0JAJoiBDIe0e/FpLjJTTueyST+QF4lAdW2S7F4Qg=="}
+[a96758b0-9417-410e-84bd-2426d770ffe7]   Rendering sections/portfolio.html.erb within layouts/application
+[a96758b0-9417-410e-84bd-2426d770ffe7]   Rendered sections/portfolio.html.erb within layouts/application (32.9ms)
+[a96758b0-9417-410e-84bd-2426d770ffe7]   Rendered layouts/_navbar.html.erb (11.9ms)
+[a96758b0-9417-410e-84bd-2426d770ffe7]   Rendered layouts/_footer.html.erb (0.1ms)
+[a96758b0-9417-410e-84bd-2426d770ffe7] Completed 200 OK in 183ms (Views: 69.1ms)
+[480ba5b7-b3ec-41f2-9150-83055ac55519] Started GET "/contact" for 127.0.0.1 at 2017-09-01 19:35:20 +0000
+[480ba5b7-b3ec-41f2-9150-83055ac55519] Processing by SectionsController#contact as HTML
+[480ba5b7-b3ec-41f2-9150-83055ac55519]   Parameters: {"authenticity_token"=>"7TSG5ks70g/wRJyugO4MUjE6wGUkVZ3/+XoiugaL5HApgacngRQj+hzYQ6V+8AaYUZRDWS4t3iNM+5rZi/iSrw=="}
+[480ba5b7-b3ec-41f2-9150-83055ac55519]   Rendering sections/contact.html.erb within layouts/application
+[480ba5b7-b3ec-41f2-9150-83055ac55519]   Rendered sections/contact.html.erb within layouts/application (3.0ms)
+[480ba5b7-b3ec-41f2-9150-83055ac55519]   Rendered layouts/_navbar.html.erb (0.2ms)
+[480ba5b7-b3ec-41f2-9150-83055ac55519]   Rendered layouts/_footer.html.erb (0.1ms)
+[480ba5b7-b3ec-41f2-9150-83055ac55519] Completed 200 OK in 135ms (Views: 31.4ms)
+[b1bf61b3-fd41-40b1-9703-9893429b938b] Started GET "/" for 127.0.0.1 at 2017-09-01 19:35:25 +0000
+[b1bf61b3-fd41-40b1-9703-9893429b938b] Processing by SectionsController#home as HTML
+[b1bf61b3-fd41-40b1-9703-9893429b938b]   Parameters: {"authenticity_token"=>"vEUQr/xArTe6JEY6jbY7eBduTHn1vplbNoOzPc5PI5h48DFuNm9cwla4mTFzqDGyd8DPRf/G2oeDAgteQzxVRw=="}
+[b1bf61b3-fd41-40b1-9703-9893429b938b]   Rendering sections/home.html.erb within layouts/application
+[b1bf61b3-fd41-40b1-9703-9893429b938b]   Rendered sections/home.html.erb within layouts/application (14.6ms)
+[b1bf61b3-fd41-40b1-9703-9893429b938b]   Rendered layouts/_navbar.html.erb (5.4ms)
+[b1bf61b3-fd41-40b1-9703-9893429b938b]   Rendered layouts/_footer.html.erb (0.6ms)
+[b1bf61b3-fd41-40b1-9703-9893429b938b] Completed 200 OK in 143ms (Views: 40.1ms)
+[a7aba6d9-db5a-411d-9211-0d335aa16794] Started GET "/" for 127.0.0.1 at 2017-09-01 20:06:38 +0000
+[a7aba6d9-db5a-411d-9211-0d335aa16794] Processing by SectionsController#home as HTML
+[a7aba6d9-db5a-411d-9211-0d335aa16794]   Rendering sections/home.html.erb within layouts/application
+[a7aba6d9-db5a-411d-9211-0d335aa16794]   Rendered sections/home.html.erb within layouts/application (31.2ms)
+[a7aba6d9-db5a-411d-9211-0d335aa16794]   Rendered layouts/_navbar.html.erb (20.4ms)
+[a7aba6d9-db5a-411d-9211-0d335aa16794]   Rendered layouts/_footer.html.erb (4.9ms)
+[a7aba6d9-db5a-411d-9211-0d335aa16794] Completed 200 OK in 421ms (Views: 311.6ms)
+[264c0f13-f64d-421b-99e3-a5a12c9680d8] Started GET "/" for 127.0.0.1 at 2017-09-01 21:10:23 +0000
+[264c0f13-f64d-421b-99e3-a5a12c9680d8] Processing by SectionsController#home as HTML
+[264c0f13-f64d-421b-99e3-a5a12c9680d8]   Rendering sections/home.html.erb within layouts/application
+[264c0f13-f64d-421b-99e3-a5a12c9680d8]   Rendered sections/home.html.erb within layouts/application (45.5ms)
+[264c0f13-f64d-421b-99e3-a5a12c9680d8]   Rendered layouts/_navbar.html.erb (18.6ms)
+[264c0f13-f64d-421b-99e3-a5a12c9680d8]   Rendered layouts/_footer.html.erb (1.5ms)
+[264c0f13-f64d-421b-99e3-a5a12c9680d8] Completed 200 OK in 519ms (Views: 375.6ms)

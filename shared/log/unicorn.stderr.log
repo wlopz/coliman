@@ -1,0 +1,157 @@
+I, [2017-09-01T18:56:52.168676 #21267]  INFO -- : Refreshing Gem list
+I, [2017-09-01T18:57:01.266161 #21267]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=13
+I, [2017-09-01T18:57:01.267170 #21267]  INFO -- : worker=0 spawning...
+I, [2017-09-01T18:57:01.278337 #21267]  INFO -- : worker=1 spawning...
+I, [2017-09-01T18:57:01.322365 #21276]  INFO -- : worker=0 spawned pid=21276
+I, [2017-09-01T18:57:01.325478 #21276]  INFO -- : worker=0 ready
+I, [2017-09-01T18:57:01.315633 #21267]  INFO -- : master process ready
+I, [2017-09-01T18:57:01.353515 #21279]  INFO -- : worker=1 spawned pid=21279
+I, [2017-09-01T18:57:01.356407 #21279]  INFO -- : worker=1 ready
+E, [2017-09-01T18:59:06.551552 #21267] ERROR -- : worker=1 PID:21279 timeout (31s > 30s), killing
+E, [2017-09-01T18:59:06.612749 #21267] ERROR -- : reaped #<Process::Status: pid 21279 SIGKILL (signal 9)> worker=1
+I, [2017-09-01T18:59:06.668165 #21267]  INFO -- : worker=1 spawning...
+I, [2017-09-01T18:59:07.089077 #21308]  INFO -- : worker=1 spawned pid=21308
+I, [2017-09-01T18:59:07.122857 #21308]  INFO -- : worker=1 ready
+I, [2017-09-01T19:08:14.295091 #21750]  INFO -- : executing ["/home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn", "-c", "config/unicorn.rb", "-D", {13=>#<Kgio::UNIXServer:/tmp/unicorn.collimanappNginx.sock>}] (in /vagrant)
+I, [2017-09-01T19:08:14.298412 #21750]  INFO -- : forked child re-executing...
+I, [2017-09-01T19:08:15.000206 #21750]  INFO -- : inherited addr=/tmp/unicorn.collimanappNginx.sock fd=13
+I, [2017-09-01T19:08:15.049878 #21750]  INFO -- : Refreshing Gem list
+I, [2017-09-01T19:08:21.104298 #21750]  INFO -- : worker=0 spawning...
+I, [2017-09-01T19:08:21.248683 #21846]  INFO -- : worker=0 spawned pid=21846
+I, [2017-09-01T19:08:21.261606 #21846]  INFO -- : worker=0 ready
+I, [2017-09-01T19:08:21.316217 #21750]  INFO -- : worker=1 spawning...
+I, [2017-09-01T19:08:21.348937 #21849]  INFO -- : worker=1 spawned pid=21849
+I, [2017-09-01T19:08:21.361707 #21849]  INFO -- : worker=1 ready
+I, [2017-09-01T19:08:21.427671 #21750]  INFO -- : master process ready
+E, [2017-09-01T19:10:34.583883 #21750] ERROR -- : worker=1 PID:21849 timeout (31s > 30s), killing
+E, [2017-09-01T19:10:34.620709 #21750] ERROR -- : reaped #<Process::Status: pid 21849 SIGKILL (signal 9)> worker=1
+I, [2017-09-01T19:10:34.621602 #21750]  INFO -- : worker=1 spawning...
+I, [2017-09-01T19:10:34.650372 #21891]  INFO -- : worker=1 spawned pid=21891
+I, [2017-09-01T19:10:34.654309 #21891]  INFO -- : worker=1 ready
+I, [2017-09-01T19:11:55.054614 #21750]  INFO -- : reaped #<Process::Status: pid 21891 exit 0> worker=1
+I, [2017-09-01T19:11:55.079260 #21267]  INFO -- : reaped #<Process::Status: pid 21276 exit 0> worker=0
+I, [2017-09-01T19:11:55.081343 #21267]  INFO -- : reaped #<Process::Status: pid 21308 exit 0> worker=1
+I, [2017-09-01T19:11:55.082609 #21267]  INFO -- : master complete
+I, [2017-09-01T19:11:55.202715 #21750]  INFO -- : reaped #<Process::Status: pid 21846 exit 0> worker=0
+I, [2017-09-01T19:11:55.239719 #21750]  INFO -- : master complete
+I, [2017-09-01T19:15:35.889602 #1863]  INFO -- : Refreshing Gem list
+I, [2017-09-01T19:15:50.562202 #1863]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=7
+I, [2017-09-01T19:15:50.563020 #1863]  INFO -- : worker=0 spawning...
+I, [2017-09-01T19:15:50.573166 #1863]  INFO -- : worker=1 spawning...
+I, [2017-09-01T19:15:50.596928 #1863]  INFO -- : master process ready
+I, [2017-09-01T19:15:50.632369 #1866]  INFO -- : worker=0 spawned pid=1866
+I, [2017-09-01T19:15:50.640347 #1869]  INFO -- : worker=1 spawned pid=1869
+I, [2017-09-01T19:15:50.646610 #1866]  INFO -- : worker=0 ready
+I, [2017-09-01T19:15:50.658413 #1869]  INFO -- : worker=1 ready
+E, [2017-09-01T19:15:54.941743 #1866] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2017-09-01T19:15:54.943554 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/railties-5.1.3/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2017-09-01T19:15:54.944067 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/railties-5.1.3/lib/rails/application.rb:247:in `env_config'
+E, [2017-09-01T19:15:54.944663 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/railties-5.1.3/lib/rails/engine.rb:692:in `build_request'
+E, [2017-09-01T19:15:54.944977 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/railties-5.1.3/lib/rails/application.rb:518:in `build_request'
+E, [2017-09-01T19:15:54.945322 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/railties-5.1.3/lib/rails/engine.rb:521:in `call'
+E, [2017-09-01T19:15:54.945664 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2017-09-01T19:15:54.945948 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:702:in `worker_loop'
+E, [2017-09-01T19:15:54.946341 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2017-09-01T19:15:54.946912 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2017-09-01T19:15:54.947148 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/bin/unicorn_rails:209:in `<top (required)>'
+E, [2017-09-01T19:15:54.947149 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `load'
+E, [2017-09-01T19:15:54.947149 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `<main>'
+E, [2017-09-01T19:15:54.947149 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-09-01T19:15:54.947149 #1866] ERROR -- : /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-09-01T19:24:05.973265 #1863]  INFO -- : reaped #<Process::Status: pid 1866 exit 0> worker=0
+I, [2017-09-01T19:24:05.979152 #1863]  INFO -- : reaped #<Process::Status: pid 1869 exit 0> worker=1
+I, [2017-09-01T19:24:05.979760 #1863]  INFO -- : master complete
+I, [2017-09-01T19:30:06.125647 #1868]  INFO -- : Refreshing Gem list
+I, [2017-09-01T19:30:21.075144 #1868]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=7
+I, [2017-09-01T19:30:21.075238 #1868]  INFO -- : worker=0 spawning...
+I, [2017-09-01T19:30:21.089336 #1868]  INFO -- : worker=1 spawning...
+I, [2017-09-01T19:30:21.106037 #1868]  INFO -- : master process ready
+I, [2017-09-01T19:30:21.110184 #1872]  INFO -- : worker=0 spawned pid=1872
+I, [2017-09-01T19:30:21.128654 #1872]  INFO -- : worker=0 ready
+I, [2017-09-01T19:30:21.163618 #1875]  INFO -- : worker=1 spawned pid=1875
+I, [2017-09-01T19:30:21.164783 #1875]  INFO -- : worker=1 ready
+I, [2017-09-01T19:44:53.610568 #1868]  INFO -- : reaped #<Process::Status: pid 1872 exit 0> worker=0
+I, [2017-09-01T19:44:53.612535 #1868]  INFO -- : reaped #<Process::Status: pid 1875 exit 0> worker=1
+I, [2017-09-01T19:44:53.614010 #1868]  INFO -- : master complete
+I, [2017-09-01T20:05:23.613460 #2284]  INFO -- : Refreshing Gem list
+I, [2017-09-01T20:06:02.586797 #2284]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=7
+I, [2017-09-01T20:06:02.598372 #2284]  INFO -- : worker=0 spawning...
+I, [2017-09-01T20:06:02.767041 #2284]  INFO -- : worker=1 spawning...
+I, [2017-09-01T20:06:03.063494 #2284]  INFO -- : master process ready
+I, [2017-09-01T20:06:03.156048 #2307]  INFO -- : worker=0 spawned pid=2307
+I, [2017-09-01T20:06:03.263949 #2307]  INFO -- : worker=0 ready
+I, [2017-09-01T20:06:03.268929 #2311]  INFO -- : worker=1 spawned pid=2311
+I, [2017-09-01T20:06:03.378002 #2311]  INFO -- : worker=1 ready
+I, [2017-09-01T20:10:46.377095 #2284]  INFO -- : reaped #<Process::Status: pid 2307 exit 0> worker=0
+I, [2017-09-01T20:10:46.524133 #2284]  INFO -- : reaped #<Process::Status: pid 2311 exit 0> worker=1
+I, [2017-09-01T20:10:46.533086 #2284]  INFO -- : master complete
+I, [2017-09-01T21:03:30.137053 #3581]  INFO -- : Refreshing Gem list
+I, [2017-09-01T21:03:46.710891 #3581]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=7
+I, [2017-09-01T21:03:46.711999 #3581]  INFO -- : worker=0 spawning...
+I, [2017-09-01T21:03:46.720258 #3581]  INFO -- : worker=1 spawning...
+I, [2017-09-01T21:03:46.744557 #3581]  INFO -- : master process ready
+I, [2017-09-01T21:03:46.796536 #3833]  INFO -- : worker=0 spawned pid=3833
+I, [2017-09-01T21:03:46.803595 #3836]  INFO -- : worker=1 spawned pid=3836
+I, [2017-09-01T21:03:46.812186 #3833]  INFO -- : worker=0 ready
+I, [2017-09-01T21:03:46.813252 #3836]  INFO -- : worker=1 ready
+I, [2017-09-01T21:16:32.410540 #3581]  INFO -- : reaped #<Process::Status: pid 3833 exit 0> worker=0
+I, [2017-09-01T21:16:32.428377 #3581]  INFO -- : reaped #<Process::Status: pid 3836 exit 0> worker=1
+I, [2017-09-01T21:16:32.430152 #3581]  INFO -- : master complete
+I, [2017-09-01T23:07:08.958519 #2185]  INFO -- : Refreshing Gem list
+/home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:87:in `block in materialize': Could not find simple-line-icons-rails-0.1.3 in any of the sources (Bundler::GemNotFound)
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:81:in `map!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:81:in `materialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:159:in `specs'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:218:in `specs_for'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:207:in `requested_specs'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/runtime.rb:109:in `block in definition_method'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/runtime.rb:21:in `setup'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler.rb:101:in `setup'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/setup.rb:19:in `<top (required)>'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /vagrant/config/boot.rb:3:in `<top (required)>'
+	from /vagrant/config/application.rb:1:in `require_relative'
+	from /vagrant/config/application.rb:1:in `<top (required)>'
+	from /vagrant/config/environment.rb:2:in `require_relative'
+	from /vagrant/config/environment.rb:2:in `<top (required)>'
+	from config.ru:4:in `require_relative'
+	from config.ru:4:in `block in <main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/rack-2.0.3/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/rack-2.0.3/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn.rb:56:in `eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn.rb:56:in `block in builder'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/bin/unicorn_rails:139:in `block in rails_builder'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:796:in `build_app!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:139:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `<main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-09-01T23:09:59.178068 #2498]  INFO -- : Refreshing Gem list
+I, [2017-09-01T23:10:47.219957 #2498]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=8
+I, [2017-09-01T23:10:47.221621 #2498]  INFO -- : worker=0 spawning...
+I, [2017-09-01T23:10:47.262085 #2498]  INFO -- : worker=1 spawning...
+I, [2017-09-01T23:10:47.339901 #2502]  INFO -- : worker=0 spawned pid=2502
+I, [2017-09-01T23:10:47.342924 #2498]  INFO -- : master process ready
+I, [2017-09-01T23:10:47.370740 #2502]  INFO -- : worker=0 ready
+I, [2017-09-01T23:10:47.443679 #2505]  INFO -- : worker=1 spawned pid=2505
+I, [2017-09-01T23:10:47.460995 #2505]  INFO -- : worker=1 ready
+I, [2017-09-02T05:23:23.931333 #2498]  INFO -- : reaped #<Process::Status: pid 2505 exit 0> worker=1
+I, [2017-09-02T05:23:23.936593 #2498]  INFO -- : reaped #<Process::Status: pid 2502 exit 0> worker=0
+I, [2017-09-02T05:23:23.937699 #2498]  INFO -- : master complete
+I, [2017-09-06T04:22:32.001418 #2655]  INFO -- : Refreshing Gem list
+I, [2017-09-06T04:23:08.667182 #2655]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=8
+I, [2017-09-06T04:23:08.692958 #2655]  INFO -- : worker=0 spawning...
+I, [2017-09-06T04:23:08.733020 #2655]  INFO -- : worker=1 spawning...
+I, [2017-09-06T04:23:08.808489 #2660]  INFO -- : worker=0 spawned pid=2660
+I, [2017-09-06T04:23:08.894698 #2655]  INFO -- : master process ready
+I, [2017-09-06T04:23:08.911537 #2660]  INFO -- : worker=0 ready
+I, [2017-09-06T04:23:08.970874 #2663]  INFO -- : worker=1 spawned pid=2663
+I, [2017-09-06T04:23:08.979227 #2663]  INFO -- : worker=1 ready
+I, [2017-09-06T04:42:05.102638 #2655]  INFO -- : reaped #<Process::Status: pid 2660 exit 0> worker=0
+I, [2017-09-06T04:42:05.135950 #2655]  INFO -- : reaped #<Process::Status: pid 2663 exit 0> worker=1
+I, [2017-09-06T04:42:05.151763 #2655]  INFO -- : master complete

@@ -1,0 +1,58 @@
+<!-- HEADER -->
+<header id="header">
+
+  <!-- HEADER TOP -->
+  <div id="header-top">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <!-- LOGO -->
+          <div id="logo">
+            <a href="index.html">
+              <!--<img src="assets/images/logo.png" alt="">-->
+              <%= link_to(image_tag("logo/Logo_Coliman-01.png", :alt => "myway2", size: "80x80"), "/") %>
+            </a>
+          </div><!-- LOGO -->
+
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </div><!-- header-top -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+        <!-- MENU -->
+        <nav>
+
+          <a id="mobile-menu-button" class="waves" href="#"><i class="halcyon-icon-menu"></i></a>
+
+          <ul class="menu clearfix" id="menu">
+            <li class="<%= is_active?(root_path) %>">
+              <%= link_to "Home", root_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="<%= is_active?(about_path) %>">
+              <%= link_to "About", about_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="<%= is_active?(services_path) %>">
+              <%= link_to "Services", services_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="<%= is_active?(portfolio_path) %>">
+              <%= link_to "Portfolio", portfolio_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="<%= is_active?(contact_path) %>">
+              <%= link_to "Contact", contact_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+
+</header><!-- HEADER -->
