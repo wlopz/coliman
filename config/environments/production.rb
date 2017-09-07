@@ -72,7 +72,7 @@ Rails.application.configure do
       :address        => 'smtp.mailgun.org',
       :user_name      => ENV['MAILGUN_USERNAME'],
       :password       => ENV['MAILGUN_PASSWORD'],
-      :domain         => 'MYAPP.herokuapp.com', #eg: 'yourappname.herokuapp.com'
+      :domain         => 'coliman.herokuapp.com', #eg: 'yourappname.herokuapp.com'
       :authentication => :plain,
   }
 
