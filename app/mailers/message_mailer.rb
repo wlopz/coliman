@@ -8,7 +8,7 @@ class MessageMailer < ApplicationMailer
                       :to => 'dynmkstudio@gmail.com',
                       :subject => 'Contact Form',
                       :text => message.body}
-    mg_client.send_message ENV['mailgun_domain'], message_params
+    mg_client.send_message 'coliman.herokuapp.com', message_params
     # send
   end
  end
