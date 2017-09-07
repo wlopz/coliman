@@ -66,10 +66,14 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "colliman_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-      api_key: ENV["MAILGUN_SECRET_API_KEY"],
-      domain: 'coliman.herokuapp.com',
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :port           => 587,
+      :address        => 'smtp.mailgun.org',
+      :user_name      => ENV['MAILGUN_USERNAME'],
+      :password       => ENV['MAILGUN_PASSWORD'],
+      :domain         => 'MYAPP.herokuapp.com', #eg: 'yourappname.herokuapp.com'
+      :authentication => :plain,
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
