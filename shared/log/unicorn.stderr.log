@@ -155,3 +155,49 @@ I, [2017-09-06T04:23:08.979227 #2663]  INFO -- : worker=1 ready
 I, [2017-09-06T04:42:05.102638 #2655]  INFO -- : reaped #<Process::Status: pid 2660 exit 0> worker=0
 I, [2017-09-06T04:42:05.135950 #2655]  INFO -- : reaped #<Process::Status: pid 2663 exit 0> worker=1
 I, [2017-09-06T04:42:05.151763 #2655]  INFO -- : master complete
+I, [2017-09-07T07:39:12.847755 #2148]  INFO -- : Refreshing Gem list
+/home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:87:in `block in materialize': Could not find unf_ext-0.0.7.4 in any of the sources (Bundler::GemNotFound)
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:81:in `map!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/spec_set.rb:81:in `materialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:159:in `specs'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:218:in `specs_for'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/definition.rb:207:in `requested_specs'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/runtime.rb:109:in `block in definition_method'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/runtime.rb:21:in `setup'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler.rb:101:in `setup'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/bundler-1.15.4/lib/bundler/setup.rb:19:in `<top (required)>'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /vagrant/config/boot.rb:3:in `<top (required)>'
+	from /vagrant/config/application.rb:1:in `require_relative'
+	from /vagrant/config/application.rb:1:in `<top (required)>'
+	from /vagrant/config/environment.rb:2:in `require_relative'
+	from /vagrant/config/environment.rb:2:in `<top (required)>'
+	from config.ru:4:in `require_relative'
+	from config.ru:4:in `block in <main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/rack-2.0.3/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/rack-2.0.3/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn.rb:56:in `eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn.rb:56:in `block in builder'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/bin/unicorn_rails:139:in `block in rails_builder'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:796:in `build_app!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/lib/unicorn/http_server.rb:139:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/gems/unicorn-5.3.0/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/unicorn_rails:23:in `<main>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `eval'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1@colliman_wbapp/bin/ruby_executable_hooks:15:in `<main>'
+I, [2017-09-07T07:51:12.267519 #5688]  INFO -- : Refreshing Gem list
+I, [2017-09-07T07:51:40.772883 #5688]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=8
+I, [2017-09-07T07:51:40.773536 #5688]  INFO -- : worker=0 spawning...
+I, [2017-09-07T07:51:40.784711 #5688]  INFO -- : worker=1 spawning...
+I, [2017-09-07T07:51:40.813258 #5688]  INFO -- : master process ready
+I, [2017-09-07T07:51:40.834968 #5692]  INFO -- : worker=0 spawned pid=5692
+I, [2017-09-07T07:51:40.851683 #5692]  INFO -- : worker=0 ready
+I, [2017-09-07T07:51:40.841917 #5695]  INFO -- : worker=1 spawned pid=5695
+I, [2017-09-07T07:51:40.866448 #5695]  INFO -- : worker=1 ready
+I, [2017-09-07T07:54:37.808484 #5688]  INFO -- : reaped #<Process::Status: pid 5692 exit 0> worker=0
+I, [2017-09-07T07:54:37.809510 #5688]  INFO -- : reaped #<Process::Status: pid 5695 exit 0> worker=1
+I, [2017-09-07T07:54:37.809956 #5688]  INFO -- : master complete

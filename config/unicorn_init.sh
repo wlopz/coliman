@@ -15,12 +15,12 @@ set -e
 USAGE="Usage: $0 <start|stop|restart|upgrade|rotate|force-stop>"
 
 # app settings
-APP_NAME="vagrant"
-APP_ROOT="/$APP_NAME"
+APP_NAME="app"
+APP_ROOT="$APP_NAME/"
 ENV="production"
 
 # environment settings
-CMD="/home/vagrant/.rvm/bin/colliman_wbapp_unicorn_rails -D -c $APP_ROOT/config/unicorn.rb -E $ENV"
+CMD="bundle exec unicorn -c config/unicorn.rb -E $ENV -D"
 PID="$APP_ROOT/shared/pids/unicorn.pid"
 OLD_PID="$PID.oldbin"
 

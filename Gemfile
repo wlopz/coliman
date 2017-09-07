@@ -21,6 +21,10 @@ gem "font-awesome-rails"
 gem 'unicorn'
 # Simple Line Icons
 gem 'simple-line-icons-rails'
+# Mailgun
+gem 'mailgun-ruby', '~>1.1.6'
+# Figaro
+gem "figaro"
 
 # group :production do
 #   gem 'rails_12factor'

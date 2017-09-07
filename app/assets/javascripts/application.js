@@ -3,6 +3,7 @@
 //= require viewport/jquery.viewport.js
 //= require menu/hoverIntent.js
 //= require menu/superfish.js
+//= require googlemaps/gmap3.min.js
 //= require fancybox/jquery.fancybox.pack.js
 //= require revolutionslider/js/jquery.themepunch.tools.min.js
 //= require revolutionslider/js/jquery.themepunch.revolution.min.js
