@@ -1,10 +1,14 @@
 class MessageMailer < ApplicationMailer
-  # use your own email address here
-  default :to => "dynmkstudio@gmail.com"
+  require 'mailgun'
 
-  def message_me(msg)
-    @msg = msg
-
-    mail(from: @msg.email, subject: @msg.subject, body: @msg.body)
+  def contact_me(message)
+    @body = message.body
+    mg_client = Mailgun::Client.new ENV['MAILGUN_SECRET_API_KEY']
+    message_params = {:from => message.email,
+                      :to => ENV['EMAIL'],
+                      :subject => 'Contact Form',
+                      :text => message.body}
+    mg_client.send_message ENV['MAILGUN_DOMAIN'], message_params
+    # send
   end
 end
