@@ -3,12 +3,12 @@ class MessageMailer < ApplicationMailer
 
   def contact_me(message)
     @body = message.body
-    mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']
+    mg_client = Mailgun::Client.new ENV['MAILGUN_SECRET_API_KEY']
     message_params = {:from => message.email,
-                      :to => 'dynmkstudio@gmail.com',
+                      :to => ENV['EMAIL'],
                       :subject => 'Contact Form',
                       :text => message.body}
-    mg_client.send_message 'coliman.herokuapp.com', message_params
+    mg_client.send_message ENV['MAILGUN_DOMAIN'], message_params
     # send
   end
  end
