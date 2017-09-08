@@ -1,10 +1,121 @@
-<%= form_for @message, url: create_message_url do |f| %>
-    <%= notice %>
-    <%= @message.errors.full_messages.join(', ') %>
+<!-- PAGE CONTENT -->
+<div id="page-content">
 
-    <%= f.text_field :name, placeholder: 'name' %>
-    <%= f.email_field :email, placeholder: 'email' %>
-    <%= f.text_field :subject, placeholder: 'subject' %>
-    <%= f.text_area :body, placeholder: 'body' %>
-    <%= f.submit 'Send' %>
-<% end %>
+  <div id="page-header" class="parallax" data-stellar-background-ratio="0.1" style="background-image:url(<%= asset_path 'backgrounds/page-header-8.jpg' %>);">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <h1>Contact</h1>
+
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Contact</li>
+          </ol>
+
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </div><!-- page-header -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+
+        <h5 class="text-uppercase"><strong>Get in touch</strong></h5>
+
+        <%= form_for @message, url: create_message_url do |f| %>
+            <fieldset>
+
+              <div id="alert-area">
+                <%= notice %>
+                <%= @message.errors.full_messages.join(', ') %>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>
+                    <%= f.label :name %>
+                    <%= f.text_field :name, :class => 'col-xs-12', :id => 'name'  %>
+                  </p>
+                </div>
+
+                <div class="col-sm-6">
+                  <p>
+                    <%= f.label :email %>
+                    <%= f.email_field :email, :class => 'col-xs-12', :id => 'email' %>
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                <%= f.label :subject %>
+                <%= f.text_field :subject, :class => 'col-xs-12', :id => 'subject' %>
+              </p>
+
+              <p>
+                <%= f.label :body %>
+                <%= f.text_area :body, :class => 'col-xs-12', :id => 'message' %>
+              </p>
+
+              <%= f.submit 'Send' %>
+            </fieldset>
+        <% end %>
+
+      </div><!-- col -->
+      <div class="col-sm-6">
+
+        <h5 class="text-uppercase"><strong>Contact info</strong></h5>
+
+        <br>
+
+        <p>Aenean luctus mi mollis quam feugiat consequat eu sed eros. Cras suscipit eu est sed imperdiet.
+          Curabitur ultrices dolor magna, at ven enatis lacus rutrum nec. Quisque elit velit, lacinia sit amet
+          tellus at, auctor suscipit metus. Duis congue nibh at tortor ornare, sed commo do ipsum mattis.</p>
+
+        <br>
+
+        <div class="widget widget-contact no-margin-bottom">
+
+          <ul>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              4124 Peachtree Street, Atlanta, <br class="visible-lg-block"> GA 30301
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              770-613-0234
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:coliman@bellsouth.net">coliman@bellsouth.net</a>
+            </li>
+          </ul>
+
+        </div><!-- widget-contact -->
+
+        <br><br>
+
+        <div class="social-media">
+
+          <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+          <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+          <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+          <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+
+        </div><!-- social-media -->
+
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+
+  <br class="hidden-lg hidden-md"><br class="hidden-lg hidden-md">
+
+  <div class="map no-margin-bottom" data-zoom="15" data-height="565" data-address="6404 Pleasantdale Rd, Doraville, GA, USA">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5m9Ayi3jWXe5C6iWCY3WYJKph6V1luxE&amp;callback=initMap" async defer></script>
+  </div>
+
+</div><!-- PAGE CONTENT -->
