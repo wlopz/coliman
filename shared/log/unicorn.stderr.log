@@ -201,3 +201,15 @@ I, [2017-09-07T07:51:40.866448 #5695]  INFO -- : worker=1 ready
 I, [2017-09-07T07:54:37.808484 #5688]  INFO -- : reaped #<Process::Status: pid 5692 exit 0> worker=0
 I, [2017-09-07T07:54:37.809510 #5688]  INFO -- : reaped #<Process::Status: pid 5695 exit 0> worker=1
 I, [2017-09-07T07:54:37.809956 #5688]  INFO -- : master complete
+I, [2017-09-08T22:39:09.267539 #2156]  INFO -- : Refreshing Gem list
+I, [2017-09-08T22:40:21.551358 #2156]  INFO -- : listening on addr=/tmp/unicorn.collimanappNginx.sock fd=8
+I, [2017-09-08T22:40:21.607692 #2156]  INFO -- : worker=0 spawning...
+I, [2017-09-08T22:40:21.630283 #2156]  INFO -- : worker=1 spawning...
+I, [2017-09-08T22:40:21.651529 #2160]  INFO -- : worker=0 spawned pid=2160
+I, [2017-09-08T22:40:21.664370 #2160]  INFO -- : worker=0 ready
+I, [2017-09-08T22:40:21.663033 #2156]  INFO -- : master process ready
+I, [2017-09-08T22:40:21.688802 #2163]  INFO -- : worker=1 spawned pid=2163
+I, [2017-09-08T22:40:21.697054 #2163]  INFO -- : worker=1 ready
+I, [2017-09-08T22:48:54.547627 #2156]  INFO -- : reaped #<Process::Status: pid 2160 exit 0> worker=0
+I, [2017-09-08T22:48:54.584046 #2156]  INFO -- : reaped #<Process::Status: pid 2163 exit 0> worker=1
+I, [2017-09-08T22:48:54.584664 #2156]  INFO -- : master complete

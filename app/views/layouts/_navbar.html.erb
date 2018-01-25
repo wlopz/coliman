@@ -10,9 +10,8 @@
 
           <!-- LOGO -->
           <div id="logo">
-            <a href="index.html">
-              <!--<img src="assets/images/logo.png" alt="">-->
-              <%= link_to(image_tag("logo/Logo_Coliman-01.png", :alt => "myway2", size: "80x80"), "/") %>
+            <a href="#">
+              <%= link_to(image_tag("logo/Logo_Coliman-01.png", :alt => "myway2", size: "80x80"), root_path, :"data-no-turbolink" => true, method: "get") %>
             </a>
           </div><!-- LOGO -->
 

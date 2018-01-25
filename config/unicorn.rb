@@ -1,5 +1,5 @@
 # set path to application
-app_dir = "/app"
+app_dir = "/vagrant"
 shared_dir = "#{app_dir}/shared"
 working_directory app_dir
 
